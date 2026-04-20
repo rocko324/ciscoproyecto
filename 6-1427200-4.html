@@ -23,7 +23,6 @@
     .scrollbar-hide::-webkit-scrollbar { display: none; }
     details summary::-webkit-details-marker { display: none; }
     details > summary { list-style: none; }
-    /* Animación modal búsqueda */
     .anim { animation: fadeIn 0.3s ease-in-out; }
     @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
     .none { display: none; }
@@ -84,25 +83,20 @@
 
     <!-- Mobile Navbar -->
     <div class="lg:hidden flex flex-col gap-2">
-      <!-- Fila superior -->
       <div class="flex justify-between items-center py-2">
         <div class="flex gap-1">
-          <!-- Botón hamburguesa -->
           <button id="mobile-menu-button" class="p-2 rounded-full hover:bg-gray-300 transition-colors">
             <i class="fas fa-bars text-black"></i>
           </button>
-          <!-- Logos -->
           <div class="flex items-center gap-2">
             <img src="https://www.ds3comunicaciones.com/mikrotik/images/Logo1.jpg" alt="DS3 Comunicaciones" class="h-10" />
             <img src="http://www.ds3comunicaciones.com/belden/images/amp_logo2-91x20.jpg" alt="AMP NetConnect" class="h-8" />
           </div>
         </div>
-        <!-- Botón buscar móvil -->
         <button id="mobile-search-button" class="p-2 rounded-md hover:bg-gray-300 transition-colors border border-black flex gap-3 items-center">
           <i class="fas fa-search text-black"></i>
         </button>
       </div>
-      <!-- Fila inferior: teléfonos y correo -->
       <div class="py-2 pl-3">
         <div class="flex items-start">
           <i class="fas fa-phone-alt mt-1 mr-1 text-black"></i>
@@ -116,7 +110,6 @@
         </div>
       </div>
     </div>
-
   </div>
 
   <!-- Menú móvil lateral (slide-in) -->
@@ -127,7 +120,6 @@
       </button>
     </div>
     <div class="px-6 pb-8">
-      <!-- Links principales AMP -->
       <div class="flex flex-wrap justify-start gap-2">
         <a href="https://www.ds3comunicaciones.com/AMP/index.html" class="border-b w-full block py-2 font-medium text-blue-500 hover:text-blue-600 transition-colors text-sm">AMP NetConnect – Inicio</a>
         <a href="https://www.ds3comunicaciones.com/AMP/precios_amp.html" class="border-b w-full block py-2 font-medium text-blue-500 hover:text-blue-600 transition-colors text-sm">Lista de Precios AMP</a>
@@ -141,7 +133,6 @@
         <a href="https://www.ds3comunicaciones.com/AMP/index.html" class="border-b w-full block py-2 font-medium text-blue-500 hover:text-blue-600 transition-colors text-sm">Cable de Fibra Óptica</a>
       </div>
 
-      <!-- Lista de Precios desplegable -->
       <details class="group mt-2">
         <summary class="flex justify-between items-center cursor-pointer list-none py-3 border-b">
           <span class="font-bold text-gray-800">Lista de Precios</span>
@@ -168,7 +159,6 @@
         </ul>
       </details>
 
-      <!-- Marcas desplegable -->
       <details class="group mt-2">
         <summary class="flex justify-between items-center cursor-pointer list-none py-3 border-b">
           <span class="font-bold text-gray-800">Marcas</span>
@@ -198,7 +188,6 @@
         </div>
       </details>
 
-      <!-- Contacto -->
       <div class="mt-2">
         <h3 class="text-lg font-bold mb-4 border-b pb-2">Contacto</h3>
         <div class="space-y-3">
@@ -210,18 +199,13 @@
       </div>
     </div>
   </div>
-
-  <!-- Overlay menú móvil -->
   <div id="menu-overlay" class="fixed inset-0 bg-black bg-opacity-50 z-40 hidden"></div>
 </nav>
 
 <!-- Modal de Búsqueda -->
-<section id="search-modal" class="fixed top-0 left-0 right-0 bottom-0 h-screen w-full px-5 pt-7 none z-50"
-  style="background-color: rgba(0,0,0,0.575)">
+<section id="search-modal" class="fixed top-0 left-0 right-0 bottom-0 h-screen w-full px-5 pt-7 none z-50" style="background-color: rgba(0,0,0,0.575)">
   <div class="max-w-[600px] mx-auto flex gap-2 justify-between">
-    <form name="form1" method="get" action="https://www.ds3comunicaciones.com/find.html"
-      class="mx-auto flex items-center justify-between px-1 border w-full rounded-md bg-white"
-      enctype="application/x-www-form-urlencoded">
+    <form name="form1" method="get" action="https://www.ds3comunicaciones.com/find.html" class="mx-auto flex items-center justify-between px-1 border w-full rounded-md bg-white" enctype="application/x-www-form-urlencoded">
       <div class="flex items-center w-full">
         <i class="fa-solid fa-magnifying-glass ps-2 text-gray-500"></i>
         <input name="q" type="text" class="outline-none px-3 py-3 w-full" placeholder="Buscar..." required />
@@ -242,9 +226,7 @@
   </div>
 </section>
 
-<!-- ═══════════════════════════════════════════════════════════
-     SUBMENU DE CATEGORÍAS
-═══════════════════════════════════════════════════════════ -->
+<!-- SUBMENU DE CATEGORÍAS -->
 <nav class="bg-white border-b border-gray-200 shadow-sm">
   <div class="flex justify-evenly overflow-x-auto md:py-2 px-4 space-x-2 scrollbar-hide">
     <a href="https://www.ds3comunicaciones.com/AMP/index.html" class="flex items-center p-1.5 rounded-lg min-w-fit flex-shrink-0 space-x-1.5 hover:bg-gray-100">
@@ -278,12 +260,7 @@
   </div>
 </nav>
 
-<!-- ═══════════════════════════════════════════════════════════
-     CONTENIDO PRINCIPAL
-═══════════════════════════════════════════════════════════ -->
-<main class="">
-
-  <!-- BREADCRUMB -->
+<main>
   <div class="border px-3 py-2 text-xs md:text-sm text-slate-600 flex flex-nowrap items-center gap-1 overflow-x-auto scrollbar-hide whitespace-nowrap">
     <a href="https://www.ds3comunicaciones.com/index.html" class="flex-shrink-0 hover:text-blue-600"><i class="fa-solid fa-house text-[0.9em]"></i></a>
     <span class="text-gray-400 flex-shrink-0"><i class="fa-solid fa-angle-right text-[0.8em]"></i></span>
@@ -294,11 +271,8 @@
     <span class="text-slate-800 font-medium flex-shrink-0">6-1427200-4</span>
   </div>
 
-  <!-- LAYOUT 3 COLUMNAS -->
   <div class="mx-auto border">
     <div class="flex flex-col md:flex-row md:justify-evenly mx-auto">
-
-      <!-- SIDEBAR IZQUIERDO: Marcas (solo lg) -->
       <aside class="hidden lg:block bg-white p-2 rounded-lg shadow-md w-full md:w-48 lg:w-56 h-[80vh] overflow-y-auto scrollbar-hide">
         <h2 class="text-lg font-bold text-gray-800 mb-4 pb-2 border-b">Nuestras Marcas</h2>
         <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-1">
@@ -323,34 +297,34 @@
         </div>
       </aside>
 
-      <!-- CONTENIDO PRINCIPAL -->
       <div class="w-full lg:w-4/6 bg-white rounded-lg shadow">
         <div class="mx-auto max-w-[1200px] w-full">
-
-          <!-- Info + imágenes -->
           <div id="information-section" class="mt-5 flex flex-col lg:flex-row gap-6 flex-wrap">
             <div class="w-full flex flex-col lg:flex-row gap-6">
-
-              <!-- Imágenes -->
               <div class="lg:w-1/2">
                 <div class="bg-white rounded-lg shadow-sm p-4">
                   <div class="w-full h-[400px] flex items-center justify-center overflow-hidden">
-                    <img id="img_main" src="6-1427200-4-1.jpg" alt="Cable UTP AMP Cat6 CMR 23AWG 6-1427200-4"
-                      class="max-h-full max-w-full object-contain cursor-pointer" onclick="viewImage(this.src)" />
+                    <img id="img_main" src="6-1427200-4-1.jpg" alt="Cable UTP AMP Cat6 CMR 23AWG 6-1427200-4" class="max-h-full max-w-full object-contain cursor-pointer" onclick="viewImage(this.src)" />
                   </div>
-                  <div class="flex gap-3 mt-4 justify-center">
+                  <div class="flex gap-3 mt-4 justify-center flex-wrap">
                     <div class="w-20 h-20 border-2 border-blue-400 rounded p-1 cursor-pointer hover:border-blue-400 transition" onclick="toExchangeImage(this)">
                       <img src="6-1427200-4-1.jpg" alt="Cable UTP" class="w-full h-full object-contain" />
                     </div>
                     <div class="w-20 h-20 border rounded p-1 cursor-pointer hover:border-blue-400 transition" onclick="toExchangeImage(this)">
                       <img src="Caja.jpg" alt="Caja AMP NetConnect" class="w-full h-full object-contain" />
                     </div>
+                    <!-- Imagen 3: Rollo de cable -->
+                    <div class="w-20 h-20 border rounded p-1 cursor-pointer hover:border-blue-400 transition" onclick="toExchangeImage(this)">
+                      <img src="https://www.ds3comunicaciones.com/AMP/images/rollo-cable-amp.jpg" alt="Rollo cable AMP Cat6" class="w-full h-full object-contain" onerror="this.src='https://placehold.co/80x80?text=Rollo+AMP'"/>
+                    </div>
+                    <!-- Imagen 4: Detalle conductor -->
+                    <div class="w-20 h-20 border rounded p-1 cursor-pointer hover:border-blue-400 transition" onclick="toExchangeImage(this)">
+                      <img src="https://www.ds3comunicaciones.com/AMP/images/conductor-23awg.jpg" alt="Conductor 23AWG cobre" class="w-full h-full object-contain" onerror="this.src='https://placehold.co/80x80?text=Conductor+23AWG'"/>
+                    </div>
                   </div>
                   <p class="text-center text-xs text-gray-400 mt-2 italic">Foto Referencial</p>
                 </div>
               </div>
-
-              <!-- Información -->
               <div class="lg:w-full px-2">
                 <div class="bg-white rounded-lg shadow-sm">
                   <h1 class="md:text-md font-bold mb-4 text-[#0D274D]">
@@ -359,8 +333,7 @@
                   <div class="mb-6">
                     <p class="text-xs text-gray-500 uppercase tracking-wide mb-1">Precio por rollo</p>
                     <span class="text-2xl font-bold text-blue-600">U$ 187.00</span>
-                    <a href="https://www.ds3comunicaciones.com/pedido.html" target="_blank"
-                      class="mt-3 ml-3 inline-flex items-center gap-1 bg-orange-500 text-white font-medium rounded-md px-4 py-2 hover:bg-orange-600 transition">
+                    <a href="https://www.ds3comunicaciones.com/pedido.html" target="_blank" class="mt-3 ml-3 inline-flex items-center gap-1 bg-orange-500 text-white font-medium rounded-md px-4 py-2 hover:bg-orange-600 transition">
                       <i class="fas fa-shopping-cart"></i> Comprar
                     </a>
                   </div>
@@ -390,12 +363,10 @@
                   <div class="mt-6">
                     <h3 class="font-semibold text-lg mb-3">Download:</h3>
                     <div class="flex flex-wrap gap-3">
-                      <a href="https://www.ds3comunicaciones.com/AMP/files/6-1427200-4.pdf" target="_blank"
-                        class="flex items-center gap-2 text-blue-600 hover:text-blue-800 border border-gray-200 rounded-md px-4 py-2 hover:bg-gray-50 transition">
+                      <a href="https://www.ds3comunicaciones.com/AMP/files/6-1427200-4.pdf" target="_blank" class="flex items-center gap-2 text-blue-600 hover:text-blue-800 border border-gray-200 rounded-md px-4 py-2 hover:bg-gray-50 transition">
                         <i class="fas fa-file-pdf text-red-500"></i><span>Ficha técnica</span>
                       </a>
-                      <a href="https://www.ds3comunicaciones.com/AMP/files/amp_cat6_datasheet.pdf" target="_blank"
-                        class="flex items-center gap-2 text-blue-600 hover:text-blue-800 border border-gray-200 rounded-md px-4 py-2 hover:bg-gray-50 transition">
+                      <a href="https://www.ds3comunicaciones.com/AMP/files/amp_cat6_datasheet.pdf" target="_blank" class="flex items-center gap-2 text-blue-600 hover:text-blue-800 border border-gray-200 rounded-md px-4 py-2 hover:bg-gray-50 transition">
                         <i class="fas fa-file-alt text-green-500"></i><span>Especificaciones</span>
                       </a>
                     </div>
@@ -405,7 +376,6 @@
             </div>
           </div>
 
-          <!-- TABS -->
           <div class="flex justify-center mt-6">
             <div class="inline-flex rounded-md shadow-sm">
               <button id="product-tab" onclick="switchTab('product')" class="px-6 py-2 text-xs md:text-sm font-medium rounded-l-lg bg-blue-600 text-white focus:outline-none">Producto</button>
@@ -413,9 +383,7 @@
             </div>
           </div>
 
-          <!-- ACORDEONES -->
           <div id="product-section" class="mt-8 w-full mx-auto space-y-4">
-
             <details open class="group border border-gray-200 rounded-lg overflow-hidden shadow-sm">
               <summary class="flex items-center justify-between p-4 bg-gray-50 hover:bg-gray-100 cursor-pointer transition-colors">
                 <h3 class="font-semibold text-black flex items-center"><svg class="w-5 h-5 mr-2 text-blue-600 transition-transform group-open:rotate-90" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>Especificaciones Técnicas</h3>
@@ -483,12 +451,10 @@
                 <div class="flex items-start"><div class="flex-shrink-0 h-5 w-5 text-blue-500 mt-0.5"><svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg></div><div class="ml-2"><p class="text-gray-700"><span class="font-medium">Temperatura de Almacenamiento:</span> -20°C a +80°C</p></div></div>
               </div>
             </details>
-
           </div>
 
-          <!-- SECCIÓN IMÁGENES -->
           <div id="images-section" class="hidden mt-6">
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
               <div class="bg-white rounded-lg shadow-sm overflow-hidden">
                 <img src="6-1427200-4-1.jpg" alt="Cable UTP AMP Cat6 4 pares" class="w-full h-64 object-contain p-4 cursor-pointer hover:opacity-90 transition" onclick="viewImage(this.src)" />
                 <p class="text-center text-xs text-gray-400 pb-2">Cable UTP – 4 pares Cat 6 CMR</p>
@@ -497,19 +463,24 @@
                 <img src="Caja.jpg" alt="Caja AMP NetConnect reel-in-box" class="w-full h-64 object-contain p-4 cursor-pointer hover:opacity-90 transition" onclick="viewImage(this.src)" />
                 <p class="text-center text-xs text-gray-400 pb-2">Caja reel-in-box 1000 ft</p>
               </div>
+              <div class="bg-white rounded-lg shadow-sm overflow-hidden">
+                <img src="https://www.ds3comunicaciones.com/AMP/images/rollo-cable-amp.jpg" alt="Rollo cable AMP Cat6" class="w-full h-64 object-contain p-4 cursor-pointer hover:opacity-90 transition" onerror="this.src='https://placehold.co/400x400?text=Rollo+AMP'" onclick="viewImage(this.src)" />
+                <p class="text-center text-xs text-gray-400 pb-2">Rollo de cable dispensador</p>
+              </div>
+              <div class="bg-white rounded-lg shadow-sm overflow-hidden">
+                <img src="https://www.ds3comunicaciones.com/AMP/images/conductor-23awg.jpg" alt="Conductor 23AWG cobre sólido" class="w-full h-64 object-contain p-4 cursor-pointer hover:opacity-90 transition" onerror="this.src='https://placehold.co/400x400?text=Conductor+23AWG'" onclick="viewImage(this.src)" />
+                <p class="text-center text-xs text-gray-400 pb-2">Conductor 23 AWG cobre sólido</p>
+              </div>
             </div>
           </div>
-
         </div>
 
-        <!-- Modal imágenes -->
         <div id="image-modal" class="fixed hidden inset-0 bg-black bg-opacity-90 z-50 flex items-center justify-center p-4">
           <span class="absolute top-4 right-4 text-white text-3xl cursor-pointer" onclick="closeModal()">&times;</span>
           <img id="modal-image" class="max-w-full max-h-full" src="" alt="Imagen ampliada" />
         </div>
       </div>
 
-      <!-- SIDEBAR DERECHO: Listas de Precios (solo lg) -->
       <aside id="links-sidebar" class="hidden lg:block w-full md:w-1/5 lg:w-1/6 bg-white p-2 rounded-lg shadow-md h-[80vh] overflow-y-auto scrollbar-hide">
         <h3 class="text-base font-bold text-black mb-3 border-b pb-2">Listas de Precios</h3>
         <ul class="grid grid-cols-1">
@@ -527,11 +498,9 @@
           <li class="hover:bg-blue-50 rounded transition-colors"><a href="https://www.ds3comunicaciones.com/ubiquiti/precios_ubiquiti.html" target="_blank" class="block px-3 py-1 text-xs text-blue-600 hover:underline font-medium">Lista de precios Ubiquiti</a></li>
         </ul>
       </aside>
-
     </div>
   </div>
 
-  <!-- PRODUCTOS SIMILARES -->
   <section class="py-8 bg-gray-50">
     <div class="container mx-auto px-4 max-w-6xl">
       <div class="text-center mb-8">
@@ -549,22 +518,11 @@
         <a href="https://www.ds3comunicaciones.com/AMP/index.html" class="group bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition-shadow border border-gray-200 hover:border-blue-500">
           <div class="p-5 flex flex-col h-full"><div class="flex-grow flex items-center justify-center mb-4 h-40"><img src="6-1427200-4-1.jpg" alt="AMP Cat6 Gris" class="max-h-full max-w-full object-contain group-hover:scale-105 transition-transform duration-300" /></div><div class="border-t pt-4"><h3 class="text-lg font-bold text-gray-800 text-center">6-1427200-8</h3><p class="text-sm text-gray-600 mt-2 line-clamp-2">Cable UTP AMP NetConnect Categoría 6 CMR 23AWG Color Gris, 1000 ft reel-in-box</p><div class="text-center mt-4 text-blue-600 font-semibold">Ver Producto</div></div></div>
         </a>
-        <a href="https://www.ds3comunicaciones.com/AMP/index.html" class="group bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition-shadow border border-gray-200 hover:border-blue-500">
-          <div class="p-5 flex flex-col h-full"><div class="flex-grow flex items-center justify-center mb-4 h-40"><img src="Caja.jpg" alt="AMP Cat6A" class="max-h-full max-w-full object-contain group-hover:scale-105 transition-transform duration-300" /></div><div class="border-t pt-4"><h3 class="text-lg font-bold text-gray-800 text-center">AMP Cat 6A</h3><p class="text-sm text-gray-600 mt-2 line-clamp-2">Cable UTP AMP NetConnect Categoría 6A CMR 23AWG, soporta 10GBASE-T, 1000 ft reel-in-box</p><div class="text-center mt-4 text-blue-600 font-semibold">Ver Producto</div></div></div>
-        </a>
-        <a href="https://www.ds3comunicaciones.com/AMP/index.html" class="group bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition-shadow border border-gray-200 hover:border-blue-500">
-          <div class="p-5 flex flex-col h-full"><div class="flex-grow flex items-center justify-center mb-4 h-40 bg-gray-50 rounded"><img src="http://www.ds3comunicaciones.com/belden/images/amp_logo2-91x20.jpg" alt="Patch Panel AMP" class="max-h-10 max-w-full object-contain group-hover:scale-105 transition-transform duration-300" /></div><div class="border-t pt-4"><h3 class="text-lg font-bold text-gray-800 text-center">Patch Panel Cat 6</h3><p class="text-sm text-gray-600 mt-2 line-clamp-2">Patch Panel AMP NetConnect Cat 6, 24 puertos, 1U rack 19", compatible con cable 6-1427200-4</p><div class="text-center mt-4 text-blue-600 font-semibold">Ver Producto</div></div></div>
-        </a>
-        <a href="https://www.ds3comunicaciones.com/AMP/index.html" class="group bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition-shadow border border-gray-200 hover:border-blue-500">
-          <div class="p-5 flex flex-col h-full"><div class="flex-grow flex items-center justify-center mb-4 h-40 bg-gray-50 rounded"><img src="http://www.ds3comunicaciones.com/belden/images/amp_logo2-91x20.jpg" alt="Keystone AMP" class="max-h-10 max-w-full object-contain group-hover:scale-105 transition-transform duration-300" /></div><div class="border-t pt-4"><h3 class="text-lg font-bold text-gray-800 text-center">Keystone Jack Cat 6</h3><p class="text-sm text-gray-600 mt-2 line-clamp-2">Jack keystone AMP NetConnect Cat 6 T568A/B, compatible con cable UTP CMR 6-1427200-4</p><div class="text-center mt-4 text-blue-600 font-semibold">Ver Producto</div></div></div>
-        </a>
       </div>
     </div>
   </section>
-
 </main>
 
-<!-- FOOTER -->
 <footer class="bg-gray-100 py-8 px-4 sm:px-6 lg:px-8 w-full">
   <div class="max-w-7xl mx-auto">
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -617,12 +575,6 @@
   </div>
 </footer>
 
-<!-- ═══════════════════════════════════════════════════════════
-     JAVASCRIPT
-     - nav.js (inline): initializeNavbar + initializeMobileMenu
-                        + initializeSearchModal + addDynamicStyles
-     - Producto: tabs + imágenes
-═══════════════════════════════════════════════════════════ -->
 <script>
 document.addEventListener('DOMContentLoaded', function () {
   initializeNavbar();
@@ -724,18 +676,19 @@ function addDynamicStyles() {
   document.head.appendChild(style);
 }
 
-// ── Miniatura → imagen principal ──
 function toExchangeImage(thumb) {
   document.getElementById('img_main').src = thumb.querySelector('img').src;
-  thumb.closest('.flex').querySelectorAll('div[onclick]').forEach(d => {
-    d.classList.remove('border-2', 'border-blue-400');
-    d.classList.add('border');
-  });
+  const container = thumb.closest('.flex');
+  if (container) {
+    container.querySelectorAll('div[onclick]').forEach(d => {
+      d.classList.remove('border-2', 'border-blue-400');
+      d.classList.add('border');
+    });
+  }
   thumb.classList.remove('border');
   thumb.classList.add('border-2', 'border-blue-400');
 }
 
-// ── Modal imagen grande ──
 function viewImage(src) {
   document.getElementById('modal-image').src = src;
   document.getElementById('image-modal').classList.remove('hidden');
@@ -746,12 +699,10 @@ function closeModal() {
   document.body.style.overflow = '';
 }
 document.addEventListener('DOMContentLoaded', function () {
-  document.getElementById('image-modal').addEventListener('click', function (e) {
-    if (e.target === this) closeModal();
-  });
+  const modal = document.getElementById('image-modal');
+  if (modal) modal.addEventListener('click', function (e) { if (e.target === this) closeModal(); });
 });
 
-// ── Tabs Producto / Imágenes ──
 function switchTab(tab) {
   const ps = document.getElementById('product-section');
   const is = document.getElementById('images-section');
@@ -768,6 +719,5 @@ function switchTab(tab) {
   }
 }
 </script>
-
 </body>
 </html>
