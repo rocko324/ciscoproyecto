@@ -1,0 +1,703 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="keywords" content="En Peru, Fibra Optica, DATATRONIX, Cable Monomodo, OM3, OM4, Bandejas FO, Acopladores, Pigtails, Patch Cord, DS3 Comunicaciones">
+    <meta name="author" content="DS3 Comunicaciones EIRL">
+    <meta name="description" content="Lista de precios de fibra óptica DATATRONIX - Cable monomodo, multimodo OM3/OM4, bandejas, acopladores, pigtails y patch cords">
+    <title>Lista de Precios DATATRONIX - Fibra Óptica - DS3 COMUNICACIONES</title>
+
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        html { scroll-behavior: smooth; }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #f5f5f5;
+            min-height: 100vh;
+        }
+
+        /* ===== HEADER ===== */
+        .header-container {
+            width: 100%;
+            background: #ffffff;
+            border-bottom: 2px solid #e0e0e0;
+            padding: 10px 20px;
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 16px;
+        }
+
+        #logoDS3 img { width: 120px; height: auto; border: 0; }
+        #logoDatatronix img { width: 200px; height: auto; border: 0; }
+
+        #contactInfo {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 13px;
+            line-height: 1.6;
+        }
+        #contactInfo a { color: #0000cc; text-decoration: none; }
+        #contactInfo a:hover { text-decoration: underline; }
+
+        .search-form {
+            margin-left: auto;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+        .search-input {
+            padding: 5px 8px;
+            width: 200px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+            font-size: 13px;
+        }
+        .search-button {
+            padding: 5px 12px;
+            background-color: #003366;
+            color: white;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+            font-size: 13px;
+        }
+        .search-button:hover { background-color: #0055aa; }
+
+        /* ===== HOME LINK ===== */
+        .home-link {
+            display: block;
+            padding: 4px 10px;
+            background: #f0f0f0;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+            font-size: 13px;
+            color: #0000cc;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .home-link:hover { background: #e0e0e0; }
+
+        /* ===== LAYOUT PRINCIPAL ===== */
+        .page-wrapper {
+            display: flex;
+            min-height: calc(100vh - 80px);
+        }
+
+        /* Menú lateral izquierdo */
+        .sidebar-left {
+            width: 164px;
+            min-width: 164px;
+            background: #fff;
+            border-right: 1px solid #ddd;
+            overflow: hidden;
+        }
+        .sidebar-left iframe {
+            width: 100%;
+            height: 100%;
+            min-height: 600px;
+            border: none;
+            display: block;
+        }
+
+        /* Contenido principal */
+        .main-content {
+            flex: 1;
+            padding: 16px 20px 40px 20px;
+            overflow-x: auto;
+            min-width: 0;
+        }
+
+        /* Menú lateral derecho */
+        .sidebar-right {
+            width: 240px;
+            min-width: 240px;
+            background: #fff;
+            border-left: 1px solid #ddd;
+            overflow: hidden;
+        }
+        .sidebar-right iframe {
+            width: 100%;
+            border: none;
+            display: block;
+        }
+
+        /* ===== TÍTULO ===== */
+        .main-title {
+            text-align: center;
+            margin-bottom: 10px;
+        }
+        .main-title h1 {
+            color: #000095;
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        /* ===== NAVEGACIÓN DE CATEGORÍAS ===== */
+        .cat-nav {
+            padding: 6px 0 10px 0;
+            border-bottom: 1px solid #ccc;
+            margin-bottom: 14px;
+            line-height: 2;
+        }
+        .cat-nav a {
+            color: #0000cc;
+            text-decoration: none;
+            font-size: 13px;
+            font-weight: bold;
+            margin: 0 4px;
+        }
+        .cat-nav a:hover { text-decoration: underline; }
+
+        /* ===== TABLA ===== */
+        .price-table {
+            width: 100%;
+            background-color: #FFFFFF;
+            border-collapse: collapse;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 12px;
+        }
+        .price-table td, .price-table th {
+            border: 1px solid #99CCFF;
+            padding: 7px 8px;
+            vertical-align: top;
+        }
+        .price-table .section-header {
+            background-color: #3366FF;
+            text-align: center;
+            font-weight: bold;
+            color: #000000;
+            font-size: 13px;
+        }
+        .price-table .column-header {
+            background-color: #000000;
+            color: #FFFFFF;
+            text-align: center;
+            font-weight: bold;
+        }
+        .price-table .model-cell {
+            text-align: center;
+            font-weight: bold;
+            white-space: nowrap;
+        }
+        .price-table .price-cell { text-align: center; }
+
+        .consultar { color: #888; font-style: italic; }
+        .precio { color: #0000ff; font-weight: bold; }
+
+        .price-note {
+            text-align: center;
+            font-weight: bold;
+            padding: 15px;
+            background-color: #f9f9f9;
+        }
+
+        /* ===== ANCLAS - dentro del flujo normal ===== */
+        .section-anchor {
+            display: block;
+            /* Compensa el header fijo si lo hubiera; aquí no es fijo, pero un pequeño offset ayuda */
+            height: 0;
+            visibility: hidden;
+        }
+
+        /* ===== FOOTER ===== */
+        .footer {
+            background: #f0f0f0;
+            border-top: 1px solid #ccc;
+            padding: 14px 20px;
+            font-size: 12px;
+            color: #555;
+            text-align: center;
+        }
+        .footer a { color: #555; }
+
+        /* ===== RESPONSIVE ===== */
+        @media (max-width: 900px) {
+            .sidebar-left, .sidebar-right { display: none; }
+            .header-container { flex-direction: column; align-items: flex-start; }
+            .search-form { margin-left: 0; }
+        }
+    </style>
+</head>
+<body>
+
+<!-- HEADER -->
+<div class="header-container">
+    <div id="logoDS3">
+        <img src="https://www.ds3comunicaciones.com/mikrotik/images/Logo1.jpg" alt="DS3 Comunicaciones">
+    </div>
+
+    <div id="contactInfo">
+        <div><b>T. 533-4339</b></div>
+        <div><b>C. 937-700-700</b></div>
+        <div><a href="mailto:netperu100@hotmail.com">netperu100@hotmail.com</a></div>
+        <div><b>Lima, PERÚ</b></div>
+    </div>
+
+    <div id="logoDatatronix">
+        <img src="images.png" alt="DATATRONIX">
+    </div>
+
+    <a class="home-link" href="https://www.ds3comunicaciones.com">🏠 Home</a>
+
+    <form name="form1" method="get" action="https://www.ds3comunicaciones.com/find.html" class="search-form">
+        <input type="hidden" name="cx" value="partner-pub-9265252540298851:f2549i3fi60">
+        <input type="hidden" name="cof" value="FORID:10">
+        <input type="hidden" name="ie" value="UTF-8">
+        <input name="q" type="text" class="search-input" placeholder="Buscar productos...">
+        <input name="sa" type="submit" value="Buscar" class="search-button">
+    </form>
+</div>
+
+<!-- LAYOUT PRINCIPAL -->
+<div class="page-wrapper">
+
+    <!-- Sidebar izquierdo -->
+    <div class="sidebar-left">
+        <iframe src="https://www.ds3comunicaciones.com/ubiquiti/derecha.html" title="Menú" scrolling="auto">
+            Tu navegador no soporta iframes.
+        </iframe>
+    </div>
+
+    <!-- Contenido principal -->
+    <div class="main-content">
+
+        <div class="main-title">
+            <h1>LISTA DE PRECIOS DATATRONIX - FIBRA ÓPTICA</h1>
+        </div>
+
+        <!-- Navegación de categorías -->
+        <div class="cat-nav">
+            <a href="#Monomodo">MONOMODO</a> |
+            <a href="#OM3">OM3</a> |
+            <a href="#OM4">OM4</a> |
+            <a href="#Bandejas">BANDEJAS</a> |
+            <a href="#Acopladores">ACOPLADORES</a> |
+            <a href="#Pigtails">PIGTAILS</a> |
+            <a href="#PatchCord">PATCH CORD</a>
+        </div>
+
+        <!-- TABLA DE PRECIOS -->
+        <table class="price-table">
+
+            <!-- ===== CABLE MONOMODO ===== -->
+            <tr><td colspan="6"><span id="Monomodo" class="section-anchor"></span></td></tr>
+            <tr>
+                <td colspan="6" class="section-header"><strong>CABLE MONOMODO (9/125um)</strong></td>
+            </tr>
+            <tr>
+                <td class="column-header"><strong>Modelo</strong></td>
+                <td class="column-header"><strong>Detalle</strong></td>
+                <td class="column-header"><strong>Precio</strong></td>
+                <td class="column-header"><strong>Modelo</strong></td>
+                <td class="column-header"><strong>Detalle</strong></td>
+                <td class="column-header"><strong>Precio</strong></td>
+            </tr>
+            <tr>
+                <td class="model-cell">FC-LT-91-12</td>
+                <td>Cable Monomodo 12 hilos, armadura dieléctrica, LSZH</td>
+                <td class="price-cell"><span class="precio">U$ 1.19</span></td>
+                <td class="model-cell">FC-LT-91-24</td>
+                <td>Cable Monomodo 24 hilos, armadura dieléctrica, LSZH</td>
+                <td class="price-cell"><span class="precio">U$ 1.59</span></td>
+            </tr>
+            <tr>
+                <td class="model-cell">FC-LTS-91-12</td>
+                <td>Cable Monomodo 12 hilos, armadura metálica, LSZH</td>
+                <td class="price-cell"><span class="precio">U$ 1.99</span></td>
+                <td class="model-cell">FC-LTS-91-24</td>
+                <td>Cable Monomodo 24 hilos, armadura metálica, LSZH</td>
+                <td class="price-cell"><span class="consultar">consultar</span></td>
+            </tr>
+
+            <!-- ===== CABLE MULTIMODO OM3 ===== -->
+            <tr><td colspan="6"><span id="OM3" class="section-anchor"></span></td></tr>
+            <tr>
+                <td colspan="6" class="section-header"><strong>CABLE MULTIMODO OM3</strong></td>
+            </tr>
+            <tr>
+                <td class="column-header"><strong>Modelo</strong></td>
+                <td class="column-header"><strong>Detalle</strong></td>
+                <td class="column-header"><strong>Precio</strong></td>
+                <td class="column-header"><strong>Modelo</strong></td>
+                <td class="column-header"><strong>Detalle</strong></td>
+                <td class="column-header"><strong>Precio</strong></td>
+            </tr>
+            <tr>
+                <td class="model-cell">FC-LT-31-06</td>
+                <td>Cable OM3 6 hilos, armadura dieléctrica, LSZH</td>
+                <td class="price-cell"><span class="precio">U$ 2.29</span></td>
+                <td class="model-cell">FC-LT-31-12</td>
+                <td>Cable OM3 12 hilos, armadura dieléctrica, LSZH</td>
+                <td class="price-cell"><span class="precio">U$ 2.90</span></td>
+            </tr>
+            <tr>
+                <td class="model-cell">FC-LT-31-24</td>
+                <td>Cable OM3 24 hilos, armadura dieléctrica, LSZH</td>
+                <td class="price-cell"><span class="consultar">consultar</span></td>
+                <td class="model-cell">FC-LTS-31-06</td>
+                <td>Cable OM3 6 hilos, armadura metálica, LSZH</td>
+                <td class="price-cell"><span class="precio">U$ 2.59</span></td>
+            </tr>
+            <tr>
+                <td class="model-cell">FC-LTS-31-12</td>
+                <td>Cable OM3 12 hilos, armadura metálica, LSZH</td>
+                <td class="price-cell"><span class="precio">U$ 3.99</span></td>
+                <td class="model-cell">FC-LTS-31-24</td>
+                <td>Cable OM3 24 hilos, armadura metálica, LSZH</td>
+                <td class="price-cell"><span class="consultar">consultar</span></td>
+            </tr>
+
+            <!-- ===== CABLE MULTIMODO OM4 ===== -->
+            <tr><td colspan="6"><span id="OM4" class="section-anchor"></span></td></tr>
+            <tr>
+                <td colspan="6" class="section-header"><strong>CABLE MULTIMODO OM4</strong></td>
+            </tr>
+            <tr>
+                <td class="column-header"><strong>Modelo</strong></td>
+                <td class="column-header"><strong>Detalle</strong></td>
+                <td class="column-header"><strong>Precio</strong></td>
+                <td class="column-header"><strong>Modelo</strong></td>
+                <td class="column-header"><strong>Detalle</strong></td>
+                <td class="column-header"><strong>Precio</strong></td>
+            </tr>
+            <tr>
+                <td class="model-cell">FC-LT-41-06</td>
+                <td>Cable OM4 6 hilos, armadura dieléctrica, LSZH</td>
+                <td class="price-cell"><span class="precio">U$ 2.99</span></td>
+                <td class="model-cell">FC-LT-41-12</td>
+                <td>Cable OM4 12 hilos, armadura dieléctrica, LSZH</td>
+                <td class="price-cell"><span class="precio">U$ 3.99</span></td>
+            </tr>
+            <tr>
+                <td class="model-cell">FC-LT-41-24</td>
+                <td>Cable OM4 24 hilos, armadura dieléctrica, LSZH</td>
+                <td class="price-cell"><span class="consultar">consultar</span></td>
+                <td class="model-cell">FC-LTS-41-06-EU</td>
+                <td>Cable OM4 6 hilos, armadura metálica, LSZH</td>
+                <td class="price-cell"><span class="precio">U$ 2.99</span></td>
+            </tr>
+            <tr>
+                <td class="model-cell">FC-LTS-41-12-EU</td>
+                <td>Cable OM4 12 hilos, armadura metálica, LSZH</td>
+                <td class="price-cell"><span class="consultar">consultar</span></td>
+                <td class="model-cell">FC-LTS-41-24-EU</td>
+                <td>Cable OM4 24 hilos, armadura metálica, LSZH</td>
+                <td class="price-cell"><span class="consultar">consultar</span></td>
+            </tr>
+
+            <!-- ===== BANDEJA FO / ACCESORIOS ===== -->
+            <tr><td colspan="6"><span id="Bandejas" class="section-anchor"></span></td></tr>
+            <tr>
+                <td colspan="6" class="section-header"><strong>BANDEJA FO / ACCESORIOS</strong></td>
+            </tr>
+            <tr>
+                <td class="column-header"><strong>Modelo</strong></td>
+                <td class="column-header"><strong>Detalle</strong></td>
+                <td class="column-header"><strong>Precio</strong></td>
+                <td class="column-header"><strong>Modelo</strong></td>
+                <td class="column-header"><strong>Detalle</strong></td>
+                <td class="column-header"><strong>Precio</strong></td>
+            </tr>
+            <tr>
+                <td class="model-cell">CPPR1-02-X1-UL</td>
+                <td>Bandeja 1RU deslizable 24 puertos LC-SC</td>
+                <td class="price-cell"><span class="precio">U$ 65.00</span></td>
+                <td class="model-cell">SC1BLANK</td>
+                <td>Tapa ciega SC simplex / LC duplex</td>
+                <td class="price-cell"><span class="precio">U$ 0.50</span></td>
+            </tr>
+            <tr>
+                <td class="model-cell">SCDPXBLANK</td>
+                <td>Tapa ciega SC duplex</td>
+                <td class="price-cell"><span class="precio">U$ 0.50</span></td>
+                <td class="model-cell">MSP6</td>
+                <td>Spool rojo ordenamiento de fibra</td>
+                <td class="price-cell"><span class="consultar">consultar</span></td>
+            </tr>
+            <tr>
+                <td class="model-cell">FMST24-E</td>
+                <td>Bandejita de fusión color rojo</td>
+                <td class="price-cell"><span class="consultar">consultar</span></td>
+                <td class="model-cell">CFR-LDRF-A1-1B-1</td>
+                <td>Bobina DROP FTTH 1 hilo 2000m</td>
+                <td class="price-cell"><span class="precio">U$ 980.00</span></td>
+            </tr>
+            <tr>
+                <td class="model-cell">CFR-LDRF-A1-1B-2</td>
+                <td>Bobina DROP FTTH 2 hilos 2000m</td>
+                <td class="price-cell"><span class="precio">U$ 980.00</span></td>
+                <td class="model-cell">DIN-FB-SC-12-UL</td>
+                <td>Cajita DIN-RAIL 6 adaptadores SC Duplex</td>
+                <td class="price-cell"><span class="precio">U$ 45.00</span></td>
+            </tr>
+            <tr>
+                <td class="model-cell">DIN-FB-FC-06-UL</td>
+                <td>Cajita DIN-RAIL 6 adaptadores FC/ST</td>
+                <td class="price-cell"><span class="precio">U$ 49.00</span></td>
+                <td class="model-cell">DEM1-48</td>
+                <td>Mufa horizontal 48 hilos IP68</td>
+                <td class="price-cell"><span class="precio">U$ 95.00</span></td>
+            </tr>
+
+            <!-- ===== ACOPLADORES / ADAPTADORES FO ===== -->
+            <tr><td colspan="6"><span id="Acopladores" class="section-anchor"></span></td></tr>
+            <tr>
+                <td colspan="6" class="section-header"><strong>ACOPLADORES / ADAPTADORES FO</strong></td>
+            </tr>
+            <tr>
+                <td class="column-header"><strong>Modelo</strong></td>
+                <td class="column-header"><strong>Detalle</strong></td>
+                <td class="column-header"><strong>Precio</strong></td>
+                <td class="column-header"><strong>Modelo</strong></td>
+                <td class="column-header"><strong>Detalle</strong></td>
+                <td class="column-header"><strong>Precio</strong></td>
+            </tr>
+            <tr>
+                <td class="model-cell">CAD-02-9-2/25</td>
+                <td>Acoplador Monomodo SC duplex azul</td>
+                <td class="price-cell"><span class="precio">U$ 4.90</span></td>
+                <td class="model-cell">CAD-02-9-1/25</td>
+                <td>Acoplador Monomodo SC simplex</td>
+                <td class="price-cell"><span class="precio">U$ 3.90</span></td>
+            </tr>
+            <tr>
+                <td class="model-cell">CAD-00-9-2/25</td>
+                <td>Acoplador Monomodo LC duplex azul</td>
+                <td class="price-cell"><span class="precio">U$ 4.90</span></td>
+                <td class="model-cell">CAD-00-9-1/25</td>
+                <td>Acoplador Monomodo LC simplex</td>
+                <td class="price-cell"><span class="precio">U$ 3.90</span></td>
+            </tr>
+            <tr>
+                <td class="model-cell">CAD-02-3-1</td>
+                <td>Acoplador Multimodo SC simplex aqua</td>
+                <td class="price-cell"><span class="precio">U$ 3.90</span></td>
+                <td class="model-cell">CAD-02-3-2</td>
+                <td>Acoplador Multimodo SC simplex BEIGE</td>
+                <td class="price-cell"><span class="precio">U$ 3.90</span></td>
+            </tr>
+            <tr>
+                <td class="model-cell">CAD-00-3-2</td>
+                <td>Acoplador Multimodo LC duplex Aqua</td>
+                <td class="price-cell"><span class="precio">U$ 4.90</span></td>
+                <td class="model-cell">CAD-00-3-1</td>
+                <td>Acoplador Multimodo LC simplex Aqua</td>
+                <td class="price-cell"><span class="precio">U$ 3.90</span></td>
+            </tr>
+
+            <!-- ===== PIGTAILS FO ===== -->
+            <tr><td colspan="6"><span id="Pigtails" class="section-anchor"></span></td></tr>
+            <tr>
+                <td colspan="6" class="section-header"><strong>PIGTAILS FO</strong></td>
+            </tr>
+            <tr>
+                <td class="column-header"><strong>Modelo</strong></td>
+                <td class="column-header"><strong>Detalle</strong></td>
+                <td class="column-header"><strong>Precio</strong></td>
+                <td class="column-header"><strong>Modelo</strong></td>
+                <td class="column-header"><strong>Detalle</strong></td>
+                <td class="column-header"><strong>Precio</strong></td>
+            </tr>
+            <tr>
+                <td class="model-cell">PT-02-9-01</td>
+                <td>Pigtail Monomodo SC 1m LSZH</td>
+                <td class="price-cell"><span class="precio">U$ 3.90</span></td>
+                <td class="model-cell">PT-00-9-01</td>
+                <td>Pigtail Monomodo LC 1m LSZH</td>
+                <td class="price-cell"><span class="precio">U$ 3.90</span></td>
+            </tr>
+            <tr>
+                <td class="model-cell">PT-00-1-01</td>
+                <td>Pigtail Multimodo OM1 LC 1m LSZH</td>
+                <td class="price-cell"><span class="precio">U$ 3.90</span></td>
+                <td class="model-cell">PT-04-1-01</td>
+                <td>Pigtail OM1 ST 1m LSZH</td>
+                <td class="price-cell"><span class="precio">U$ 3.90</span></td>
+            </tr>
+            <tr>
+                <td class="model-cell">PT-00-3-01</td>
+                <td>Pigtail Multimodo OM3 LC 1m LSZH</td>
+                <td class="price-cell"><span class="precio">U$ 3.90</span></td>
+                <td class="model-cell">PT-02-3-01</td>
+                <td>Pigtail Multimodo OM3 SC 1m LSZH</td>
+                <td class="price-cell"><span class="precio">U$ 3.90</span></td>
+            </tr>
+            <tr>
+                <td class="model-cell">PT-00-4-01</td>
+                <td>Pigtail OM4 LC violeta 1m LSZH</td>
+                <td class="price-cell"><span class="precio">U$ 4.90</span></td>
+                <td class="model-cell">PT-02-4-01</td>
+                <td>Pigtail OM4 SC violeta 1m LSZH</td>
+                <td class="price-cell"><span class="precio">U$ 4.90</span></td>
+            </tr>
+
+            <!-- ===== PATCH CORD MONOMODO ===== -->
+            <tr><td colspan="6"><span id="PatchCord" class="section-anchor"></span></td></tr>
+            <tr>
+                <td colspan="6" class="section-header"><strong>PATCH CORD MONOMODO</strong></td>
+            </tr>
+            <tr>
+                <td class="column-header"><strong>Modelo</strong></td>
+                <td class="column-header"><strong>Detalle</strong></td>
+                <td class="column-header"><strong>Precio</strong></td>
+                <td class="column-header"><strong>Modelo</strong></td>
+                <td class="column-header"><strong>Detalle</strong></td>
+                <td class="column-header"><strong>Precio</strong></td>
+            </tr>
+            <tr>
+                <td class="model-cell">PCF-0000-92-02</td>
+                <td>Patch Cord LC/LC 2m Monomodo</td>
+                <td class="price-cell"><span class="precio">U$ 20.00</span></td>
+                <td class="model-cell">PCF-0202-92-02</td>
+                <td>Patch Cord SC/SC 2m Monomodo</td>
+                <td class="price-cell"><span class="precio">U$ 20.00</span></td>
+            </tr>
+            <tr>
+                <td class="model-cell">PCF-0002-92-02</td>
+                <td>Patch Cord LC/SC 2m Monomodo</td>
+                <td class="price-cell"><span class="precio">U$ 20.00</span></td>
+                <td class="model-cell">PCF-0000-92-03</td>
+                <td>Patch Cord LC/LC 3m Monomodo</td>
+                <td class="price-cell"><span class="precio">U$ 21.00</span></td>
+            </tr>
+            <tr>
+                <td class="model-cell">PCF-0202-92-03</td>
+                <td>Patch Cord SC/SC 3m Monomodo</td>
+                <td class="price-cell"><span class="precio">U$ 21.00</span></td>
+                <td class="model-cell">PCF-0002-92-03</td>
+                <td>Patch Cord LC/SC 3m Monomodo</td>
+                <td class="price-cell"><span class="precio">U$ 21.00</span></td>
+            </tr>
+            <tr>
+                <td class="model-cell">PCF-0000-92-05</td>
+                <td>Patch Cord LC/LC 5m Monomodo</td>
+                <td class="price-cell"><span class="precio">U$ 27.00</span></td>
+                <td class="model-cell">PCF-0000-92-10</td>
+                <td>Patch Cord LC/LC 10m Monomodo</td>
+                <td class="price-cell"><span class="precio">U$ 33.00</span></td>
+            </tr>
+            <tr>
+                <td class="model-cell">PCF-0000-92-15</td>
+                <td>Patch Cord LC/LC 15m Monomodo</td>
+                <td class="price-cell"><span class="precio">U$ 41.00</span></td>
+                <td class="model-cell">PCF-0000-92-20</td>
+                <td>Patch Cord LC/LC 20m Monomodo</td>
+                <td class="price-cell"><span class="precio">U$ 49.00</span></td>
+            </tr>
+
+            <!-- ===== PATCH CORD MULTIMODO OM3 / OM4 ===== -->
+            <tr>
+                <td colspan="6" class="section-header"><strong>PATCH CORD MULTIMODO OM3 / OM4</strong></td>
+            </tr>
+            <tr>
+                <td class="column-header"><strong>Modelo</strong></td>
+                <td class="column-header"><strong>Detalle</strong></td>
+                <td class="column-header"><strong>Precio</strong></td>
+                <td class="column-header"><strong>Modelo</strong></td>
+                <td class="column-header"><strong>Detalle</strong></td>
+                <td class="column-header"><strong>Precio</strong></td>
+            </tr>
+            <tr>
+                <td class="model-cell">PCF-0000-32-02</td>
+                <td>Patch Cord OM3 LC/LC 2m</td>
+                <td class="price-cell"><span class="precio">U$ 20.00</span></td>
+                <td class="model-cell">PCF-0202-32-02</td>
+                <td>Patch Cord OM3 SC/SC 2m</td>
+                <td class="price-cell"><span class="precio">U$ 20.00</span></td>
+            </tr>
+            <tr>
+                <td class="model-cell">PCF-0002-32-02</td>
+                <td>Patch Cord OM3 LC/SC 2m</td><!-- CORREGIDO: </td> erróneo eliminado -->
+                <td class="price-cell"><span class="precio">U$ 20.00</span></td>
+                <td class="model-cell">PCF-0000-32-03</td>
+                <td>Patch Cord OM3 LC/LC 3m</td>
+                <td class="price-cell"><span class="precio">U$ 21.00</span></td>
+            </tr>
+            <tr>
+                <td class="model-cell">PCF-0202-32-03</td>
+                <td>Patch Cord OM3 SC/SC 3m</td>
+                <td class="price-cell"><span class="precio">U$ 21.00</span></td>
+                <td class="model-cell">PCF-0002-32-03</td>
+                <td>Patch Cord OM3 LC/SC 3m</td>
+                <td class="price-cell"><span class="precio">U$ 21.00</span></td>
+            </tr>
+            <tr>
+                <td class="model-cell">PCF-0004-32-03</td>
+                <td>Patch Cord OM3 LC/ST 3m</td>
+                <td class="price-cell"><span class="precio">U$ 21.00</span></td>
+                <td class="model-cell">PCF-0000-32-05</td>
+                <td>Patch Cord OM3 LC/LC 5m</td>
+                <td class="price-cell"><span class="precio">U$ 25.00</span></td>
+            </tr>
+            <tr>
+                <td class="model-cell">PCF-0000-32-10</td>
+                <td>Patch Cord OM3 LC/LC 10m</td>
+                <td class="price-cell"><span class="precio">U$ 30.00</span></td>
+                <td class="model-cell">PCF-0000-32-15</td>
+                <td>Patch Cord OM3 LC/LC 15m</td>
+                <td class="price-cell"><span class="precio">U$ 39.00</span></td>
+            </tr>
+            <tr>
+                <td class="model-cell">PCF-0000-32-20</td>
+                <td>Patch Cord OM3 LC/LC 20m</td>
+                <td class="price-cell"><span class="precio">U$ 45.00</span></td>
+                <td class="model-cell">PCF-0000-42-02</td>
+                <td>Patch Cord OM4 LC/LC 2m violeta</td>
+                <td class="price-cell"><span class="precio">U$ 21.00</span></td>
+            </tr>
+            <tr>
+                <td class="model-cell">PCF-0000-42-03</td>
+                <td>Patch Cord OM4 LC/LC 3m violeta</td>
+                <td class="price-cell"><span class="precio">U$ 21.00</span></td>
+                <td class="model-cell">PCF-0000-42-05</td>
+                <td>Patch Cord OM4 LC/LC 5m violeta</td>
+                <td class="price-cell"><span class="precio">U$ 27.00</span></td>
+            </tr>
+            <tr>
+                <td class="model-cell">PCF-0000-42-10</td>
+                <td>Patch Cord OM4 LC/LC 10m violeta</td>
+                <td class="price-cell"><span class="precio">U$ 33.00</span></td>
+                <td class="model-cell">PCF-0000-42-15</td>
+                <td>Patch Cord OM4 LC/LC 15m violeta</td>
+                <td class="price-cell"><span class="precio">U$ 41.00</span></td>
+            </tr>
+            <tr>
+                <td class="model-cell">PCF-0000-42-20</td>
+                <td>Patch Cord OM4 LC/LC 20m violeta</td>
+                <td class="price-cell"><span class="precio">U$ 49.00</span></td>
+                <td class="model-cell"></td>
+                <td></td>
+                <td class="price-cell"></td>
+            </tr>
+
+            <!-- NOTA DE PRECIOS -->
+            <tr>
+                <td colspan="6" class="price-note">
+                    <strong>Los precios son en dólares, no incluyen IGV.</strong>
+                </td>
+            </tr>
+
+        </table>
+    </div><!-- /main-content -->
+
+    <!-- Sidebar derecho -->
+    <div class="sidebar-right">
+        <iframe src="https://www.ds3comunicaciones.com/amphenol/listas.html" title="Lista de precios" scrolling="auto" height="500">
+            Tu navegador no soporta iframes.
+        </iframe>
+    </div>
+
+</div><!-- /page-wrapper -->
+
+<!-- FOOTER -->
+<div class="footer">
+    <strong>DS3 Comunicaciones EIRL</strong> - Todos los derechos reservados<br>
+    Lima, Perú - <a href="mailto:netperu100@hotmail.com">netperu100@hotmail.com</a>
+</div>
+
+</body>
+</html>
